@@ -143,5 +143,7 @@ body {
 
 @media only screen and (max-device-width: 600px) {
   .slideshow-container {display: none;}
-  .flex-coloumn {top: 120vh;}
+  .flex-coloumn {
+    position: relative;
+    top: 120vh;}
   .flex-row {flex-direction: column;}
