@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Aditya Rifki Yuliatama">
+  <meta name="description" content="this is my first personal website">
+  <script src="https://kit.fontawesome.com/a2f99ee185.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style2.css">
+  <title>Aditya Rifki</title>
+</head>
+
+<body>
+  <header>
+    <!-- navbar  -->
+    <div class="topnav" id="myTopnav">
+      <div class="logo">
+        <img src="image/bitmap.png" alt="ini logo saya">
+      </div>
+      <a href="portofolio/calculator/calculators.html"><i class="fa-solid fa-calculator"></i></a>
+      <a href="discord.com"><i class="fa-brands fa-discord"></i></a>
+      <a href="index.html">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
+    </div>
+    <!-- navbar -->
+  </header>
+
+  <main>
+    <div class="slideshow-container">
+      <div class="mySlide1 fade">
+        <img src="image/mountains.jpg" alt="my slide" width="100%">
+      </div>
+      <div class="mySlide1 fade">
+        <img src="image/snow.jpg" alt="my slide" width="100%">
+      </div>
+    </div>
+    <div class="content">
+      <div class="myProfile center">
+        <img src="image/profil.png" alt="ini foto saya" width="200px">
+      </div>
+      <div class="greeting center">
+        <h1><strong>Hello There, <br>I'm Aditya Rifki Yuliatama</strong></h1>
+        <h3><strong>I am a Junior Web Developer</strong></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis sapiente quasi eos eveniet nulla harum magni autem assumenda atque velit, officiis eum amet quaerat voluptates. Error sapiente, provident dolores molestias.</p>
+        <a href="About me" class="button">About me</a>
+        <a href="contact" class="button">Contact</a>
+        <a href="Resume" class="button">Resume</a>
+      </div>
+      <div class="flex-coloumn center">
+        <div class="flex-row">
+          <div class="box"><img src="image/bitmap.png" alt=""></div>
+          <div class="box"><img src="image/bitmap.png" alt=""></div>
+          <div class="box"><img src="image/bitmap.png" alt=""></div>
+        </div>
+        <div class="flex-row">
+          <div class="box"><img src="image/bitmap.png" alt=""></div>
+          <div class="box"><img src="image/bitmap.png" alt=""></div>
+          <div class="box"><img src="image/bitmap.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlide1");
+      //i < slides.length digunakan untuk membatasi proses looping
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+  </script>
+</body>
+
+</html>

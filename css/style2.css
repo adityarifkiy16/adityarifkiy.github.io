@@ -1,0 +1,149 @@
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.logo {
+  position: absolute;
+  float: left;
+}
+
+.logo img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.topnav {
+  background-color: #54BAB9;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: cursive;
+}
+
+.topnav a:hover {
+  background-color: green;
+  color: #ffff;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.content {
+  width: 100%;
+}
+
+.center{
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  text-align: center;
+}
+
+.myProfile {
+  top: 15vh;
+}
+
+.greeting{
+  width: 60%;
+  top: 50vh;
+}
+
+.slideshow-container {
+  width: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+.button{
+  text-decoration: none;
+  background-color: #7FB77E;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  display: inline-block;
+  margin: 5px 2px;
+}
+
+.button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.flex-coloumn{
+  display: flex;
+  flex-direction: column;
+  top: 100vh;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  border: solid 1px;
+}
+.box{
+  flex-grow: 1;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.box img{
+  width: 100%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mySlide1 {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* keyframes digunakan untuk membuat animasi */
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  .slideshow-container {display: none;}
+  .flex-coloumn {top: 120vh;}
+  .flex-row {flex-direction: column;}
