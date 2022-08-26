@@ -45,21 +45,24 @@ body {
 }
 
 .center{
-  left: 0;
-  right: 0;
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
   text-align: center;
 }
 
 .myProfile {
-  top: 15vh;
+  top: 130px;
+  position: absolute;
+  left: 0;
+  right: 0
 }
 
 .greeting{
+  position: absolute;
   width: 60%;
-  top: 50vh;
+  top: 350px;
+  left: 0;
+  right: 0
 }
 
 .slideshow-container {
@@ -107,11 +110,11 @@ body {
 }
 .box{
   flex-grow: 1;
-  margin: 5px;
+  width: 300px;
 }
 
 .box img{
-  width: 200px;
+  width: 100%;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -145,8 +148,7 @@ body {
 @media only screen and (max-device-width: 600px) {
   .slideshow-container {display: none;}
   .flex-coloumn {
-    top: 120vh;
-    position: relative;
+    top: 950px;
   }
   .flex-row {flex-direction: column;}
 }
