@@ -94,7 +94,8 @@ body {
   display: flex;
   flex-direction: column;
   top: 100vh;
-  width: 50%;
+  width: 100%;
+  position: absolute;
   justify-content: center;
   align-items: center;
 }
@@ -110,7 +111,7 @@ body {
 }
 
 .box img{
-  width: 100%;
+  width: 200px;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -144,6 +145,8 @@ body {
 @media only screen and (max-device-width: 600px) {
   .slideshow-container {display: none;}
   .flex-coloumn {
+    top: 120vh;
     position: relative;
-    top: 120vh;}
+  }
   .flex-row {flex-direction: column;}
+}
