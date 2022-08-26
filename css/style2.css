@@ -103,11 +103,9 @@ body {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  border: solid 1px;
 }
 .box{
   flex-grow: 1;
-  border: 2px solid black;
   margin: 5px;
 }
 
