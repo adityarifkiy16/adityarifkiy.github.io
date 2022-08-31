@@ -51,20 +51,24 @@ body {
 }
 
 .myProfile {
-  top: 130px;
-  position: absolute;
+  top: 100px;
+  position: relative;
   left: 0;
   right: 0
 }
 
 .greeting{
-  position: absolute;
+  position: relative;
   width: 60%;
-  top: 350px;
+  top: 100px;
   left: 0;
   right: 0
 }
 
+.content{
+  position: relative;
+  top: 100px;
+}
 .slideshow-container {
   width: 60%;
   position: absolute;
@@ -96,9 +100,9 @@ body {
 .flex-coloumn{
   display: flex;
   flex-direction: column;
-  top: 100vh;
+  top: 150px;
   width: 100%;
-  position: absolute;
+  position: relative;
   justify-content: center;
   align-items: center;
 }
@@ -110,7 +114,7 @@ body {
 }
 .box{
   flex-grow: 1;
-  width: 300px;
+  width: 250px;
 }
 
 .box img{
@@ -147,8 +151,9 @@ body {
 
 @media only screen and (max-device-width: 600px) {
   .slideshow-container {display: none;}
-  .flex-coloumn {
-    top: 950px;
-  }
-  .flex-row {flex-direction: column;}
+  .box {width: 100px}
+}
+@media only screen and (max-device-width: 900px) {
+  .slideshow-container {display: none;}
+  .box {width: 200px}
 }
