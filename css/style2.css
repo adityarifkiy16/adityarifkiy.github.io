@@ -150,11 +150,11 @@ img{
   }
 }
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-width: 600px) {
   .slideshow-container {display: none;}
   .box {width: 100px}
 }
-@media only screen and (max-device-width: 900px) {
+@media only screen and (max-width: 900px) {
   .slideshow-container {display: none;}
   .box {width: 100px}
 }
