@@ -155,5 +155,5 @@ body {
 }
 @media only screen and (max-device-width: 900px) {
   .slideshow-container {display: none;}
-  .box {width: 200px}
+  .box {width: 150px}
 }
