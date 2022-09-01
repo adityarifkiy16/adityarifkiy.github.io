@@ -53,8 +53,9 @@ body {
 .myProfile {
   top: 100px;
   position: relative;
+  width: 200px;
   left: 0;
-  right: 0
+  right: 0;
 }
 
 .greeting{
@@ -101,7 +102,6 @@ body {
   display: flex;
   flex-direction: column;
   top: 150px;
-  width: 100%;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -114,12 +114,13 @@ body {
 }
 .box{
   flex-grow: 1;
-  width: 200px;
+  width: 300px;
 }
 
-.box img{
+img{
   width: 100%;
 }
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -151,9 +152,9 @@ body {
 
 @media only screen and (max-device-width: 600px) {
   .slideshow-container {display: none;}
-  .box {width: 100px}
+  .box {width: 110px}
 }
 @media only screen and (max-device-width: 900px) {
   .slideshow-container {display: none;}
-  .box {width: 150px}
+  .box {width: 200px}
 }
