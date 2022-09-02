@@ -18,11 +18,11 @@
       <div class="logo">
         <img src="image/bitmap.png" alt="ini logo saya">
       </div>
-      <a href="portofolio/calculator/calculators.html"><i class="fa-solid fa-calculator"></i></a>
-      <a href="discord.com"><i class="fa-brands fa-discord"></i></a>
-      <a href="index.html">Home</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i></a>
+      <a href="portofolio/calculator/calculators.html"><i class="fa-solid fa-calculator"></i></a>
+      <a href="discord.com"><i class="fa-brands fa-discord"></i></a>
+      <a href="index.html"><i class="fa-solid fa-house-user"></i></a>
     </div>
     <!-- navbar -->
   </header>
@@ -48,6 +48,7 @@
         <a href="contact" class="button">Contact</a>
         <a href="Resume" class="button">Resume</a>
       </div>
+          <hr>
       <div class="flex-coloumn">
         <div class="flex-row">
           <div class="box"><img src="image/white-swan.jpg" alt=""></div>
@@ -80,6 +81,15 @@
       }
       slides[slideIndex - 1].style.display = "block";
       setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav"){
+        x.className += " responsive"
+      } else {
+        x.className = "topnav";
+      }
     }
   </script>
 </body>
