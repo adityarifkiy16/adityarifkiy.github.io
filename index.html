@@ -8,6 +8,7 @@
   <meta name="description" content="this is my first personal website">
   <script src="https://kit.fontawesome.com/a2f99ee185.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style2.css">
+  <link rel="icon" href="icon/favicon.ico">
   <title>Aditya Rifki</title>
 </head>
 
@@ -21,7 +22,7 @@
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i></a>
       <a href="portofolio/calculator/calculators.html"><i class="fa-solid fa-calculator"></i></a>
-      <a href="https://www.instagram.com/adityarifkiy/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="discord.com"><i class="fa-brands fa-discord"></i></a>
       <a href="index.html"><i class="fa-solid fa-house-user"></i></a>
     </div>
     <!-- navbar -->
@@ -30,25 +31,28 @@
   <main>
     <div class="slideshow-container">
       <div class="mySlide1 fade">
-        <img src="image/mountains.jpg" alt="my slide" width="100%">
+        <img src="image/mount.jpg" alt="my slide" height="300px">
       </div>
       <div class="mySlide1 fade">
-        <img src="image/snow.jpg" alt="my slide" width="100%">
+        <img src="image/mount2.jpg" alt="my slide" height="300px">
       </div>
     </div>
     <div class="content">
-      <div class="myProfile center">
-        <img src="image/profil.png" alt="ini foto saya" width="200px">
-      </div>
-      <div class="greeting center">
+      <div class="myProfile">
+        <div class="myImage"><img src="image/profil.png" alt="ini foto saya"></div>
         <h1><strong>Hello There, <br>I'm Aditya Rifki Yuliatama</strong></h1>
         <h3><strong>I am a Junior Web Developer</strong></h3>
-        <p>I am a graduate of SMK Negeri 7 Semarang. I am currently working as an IT Support in one of the educational institutions in Semarang City. I have approximately 1 year of experience as a Field Engineer at one of the ISPs in Semarang City. Then I have basic mikrotik skills and basic programming using HTML, CSS, Javascript. I am also an expert in the field of computer installation both hardware and software.</p>
-        <a href="About me" class="button">About me</a>
-        <a href="contact" class="button">Contact</a>
+      </div>
+      <div class="about">
+        <p>I am a graduate of SMK Negeri 7 Semarang. I am currently working as an IT Support in one of the educational institutions in Semarang City. I have approximately 1 year of experience as a Field Engineer at one of the ISPs in Semarang City.
+          Then I have basic mikrotik skills and basic programming using HTML, CSS, Javascript. I am also an expert in the field of computer installation both hardware and software.</p>
+      </div>
+      <div class="botNav">
+        <a href="About" class="button">About</a>
+        <a href="https://wa.me/6281935693340" class="button">Contact</a>
         <a href="Resume" class="button">Resume</a>
       </div>
-          <hr>
+      <hr>
       <div class="flex-coloumn">
         <div class="flex-row">
           <div class="box"><img src="image/white-swan.jpg" alt=""></div>
@@ -85,7 +89,7 @@
 
     function myFunction() {
       var x = document.getElementById("myTopnav");
-      if (x.className === "topnav"){
+      if (x.className === "topnav") {
         x.className += " responsive"
       } else {
         x.className = "topnav";
